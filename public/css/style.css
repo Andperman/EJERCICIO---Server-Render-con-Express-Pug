@@ -1,0 +1,131 @@
+body {
+    width: 800px;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    background-color: hsl(31, 52%, 81%);
+  }
+  .container {
+    width: 800px;
+    margin: 0 auto;
+  }
+  fieldset {
+    display: block;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-before: 0em;
+    -webkit-padding-start: 0em;
+    -webkit-padding-end: 0em;
+    -webkit-padding-after: 0em;
+    border: 0px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    min-width: -webkit-min-content;
+    padding: 150px;
+  }
+  .ghost-input, p {
+    display: block;
+    font-weight:400;
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+    border:0px;
+    outline: none;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #456081;
+    background: hwb(0 100% 0%);
+    font-family: Open Sans,Verdana;
+    padding: 10px 15px;
+    margin: 30px 0px;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }
+  .ghost-input:focus {
+    border-bottom:1px solid #ddd;
+  }
+  .ghost-button {
+    background-color: transparent;
+    border:2px solid hsl(90, 12%, 20%);
+    padding:10px 30px;
+    width: 100%;
+    min-width: 350px;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }
+  .ghost-button:hover {
+    border:2px solid #515151;
+  }
+  p {
+    color: #E64A19;
+  }
+
+  .movie-card {
+    display: flex;
+    align-items: flex-start;
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: hwb(180 60% 24%);
+    font-family: 'Open Sans', sans-serif;
+    transition: transform 0.2s ease;
+    margin-top: 180px;
+  }
+  
+  .movie-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .poster {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+    margin-top: 60px;
+  }
+  
+  .movie-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 300px;
+  }
+  
+  .movie-title {
+    font-size: 35px;
+    font-weight: 600;
+    margin: 0;
+    color: #333333;
+  }
+  
+  .movie-year, .movie-genre, .movie-director , .movie-plot {
+    font-size: 14px;
+    color: #666666;
+    margin: 6px 0;
+  }
+  
+  button {
+    background-color: hsl(204, 21%, 71%); 
+    color: #1f1f1f; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    transition: background-color 0.3s ease; 
+  }
+
+  button:hover {
+    background-color: #cfdde7; 
+  }
+  
