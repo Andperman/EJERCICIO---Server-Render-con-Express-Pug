@@ -1,16 +1,16 @@
 const express = require('express')
 const app = express()
-require('dotenv').config()
-const bodyParser = require('body-parser');
+require('dotenv').config() //paquete para variables de entorno
+const bodyParser = require('body-parser'); //paquete para recibir los valores del formulario
 
 app.use(express.json());
-app.use(express.static('public'));
+app.use(express.static('public')); //importamos ficheros estáticos
 
-app.set('view engine', 'pug');
+app.set('view engine', 'pug'); //plantillas pug
 app.set('views','./views');
-app.use(bodyParser.urlencoded({ extended: true })); //descifra lo que viene en le formulario
+app.use(bodyParser.urlencoded({ extended: true })); //descifra lo que vienen del formulario
 
-// Rutas
+// Arichivo rutas
 const filmRoutes = require("./routes/films.routes")
 
 // Habilitar rutas
